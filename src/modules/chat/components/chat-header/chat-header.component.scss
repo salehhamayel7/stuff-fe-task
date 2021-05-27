@@ -1,4 +1,8 @@
+@import "./../../../../styles/variables.scss";
+
 .chat-header-component {
+    color: white;
+
     .user-image {
         background-size: cover;
         border-radius: 50%;
@@ -9,7 +13,7 @@
     }
 
     nav {
-        background: rgba(246, 250, 253, 0.95);
-        box-shadow: 0px 3px 10px -7px rgba(0, 0, 0, 30%);
+        background: $sPrimary;
+        box-shadow: 0px 3px 10px -9px rgba(0, 0, 0, 30%);
     }
 }

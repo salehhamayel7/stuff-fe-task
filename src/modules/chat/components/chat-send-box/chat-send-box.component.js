@@ -11,7 +11,7 @@ export default function ChatSendBoxComponent(props) {
     const [textValue, textValueSet] = useState('');
 
     const onKeyDowsnHandler = (e) => {
-        if(e.keyCode == 13 && e.shiftKey == false) {
+        if(e.keyCode === 13 && e.shiftKey === false) {
             e.preventDefault();
             onAddMessage({
                 content: textValue,
@@ -26,7 +26,7 @@ export default function ChatSendBoxComponent(props) {
         <div className="chat-send-box-component">
             <textarea value={textValue} 
             onChange={(e) => textValueSet(e.target.value)}
-            onKeyDown={onKeyDowsnHandler} placeholder="Type Somthing ..."></textarea>
+            onKeyDown={onKeyDowsnHandler} placeholder="Type something ..."></textarea>
         </div>
     )
 }

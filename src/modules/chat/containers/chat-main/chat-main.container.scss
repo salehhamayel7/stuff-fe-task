@@ -42,6 +42,7 @@
             background: white;
             cursor: pointer;
             font-size: 10px;
+            color: #ccc;
 
             i {
                 position: absolute;
@@ -51,6 +52,7 @@
             }
 
             &:hover {
+                color: #98c0ff;
                 border-color: #71aae2;
             }
         }
