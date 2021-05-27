@@ -9,6 +9,7 @@ export default function SideBarComponent() {
                 </div>
             </div>
             <table className="info mt-3">
+                <tbody>
                     <tr>
                         <td>Name:</td>
                         <td>Agent</td>
@@ -17,7 +18,8 @@ export default function SideBarComponent() {
                         <td>Age:</td>
                         <td>26</td>
                     </tr>
-                </table>
+                </tbody>
+            </table>
         </div>
     )
 }
