@@ -1,3 +1,6 @@
+
+@import './../../../../styles/variables.scss';
+
 .chat-main-container {
     padding-top: 56px;
     overflow: hidden;
@@ -52,8 +55,8 @@
             }
 
             &:hover {
-                color: #98c0ff;
-                border-color: #71aae2;
+                color: $sPrimary;
+                border-color: $sPrimary;
             }
         }
     }
