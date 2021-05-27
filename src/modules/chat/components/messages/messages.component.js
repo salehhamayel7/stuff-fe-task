@@ -8,8 +8,8 @@ export default function MessagesComponent(props) {
 
     const messagesContent = messeges.map((msg, index) => {
         return (
-            <div key={index} className={`my-2 d-flex ${msg.sender == 'agent' ? 'justify-content-end ml-4' : 'mr-4'}`}>
-                <div className="message px-1">
+            <div key={index} className={`mt-2 d-flex ${msg.sender == 'agent' ? 'justify-content-end ml-4' : 'mr-4'}`}>
+                <div className={`message px-2 ${msg.sender == 'agent' ? 'agent' : 'user'}`}>
                     {msg.content}
                 </div>
             </div>

@@ -4,7 +4,7 @@ import ChatHeaderComponent from './../../components/chat-header/chat-header.comp
 import ChatSendBoxComponent from './../../components/chat-send-box/chat-send-box.component';
 import MessagesComponent from './../../components/messages/messages.component';
 import SideBarComponent from './../../components/side-bar/side-bar.component';
-import {initialMessages} from './../../constants/messages';
+import { initialMessages } from './../../constants/messages';
 
 export default function ChatMainContainer() {
     const [isSideBarExbanded, isSideBarExbandedSet] = useState(true);
@@ -25,13 +25,13 @@ export default function ChatMainContainer() {
                 </div>
                 <div className="side-bar-container border-left">
                     <div className="expand-toggle pointer" onClick={() => isSideBarExbandedSet(!isSideBarExbanded)}>
-                        e
+                        <i className={`fa fa-chevron-left ${isSideBarExbanded? 'fa-chevron-right': 'fa-chevron-left'}`} aria-hidden="true"></i>
                     </div>
                     <SideBarComponent />
                 </div>
             </div>
             <div className="send-box-container">
-                <ChatSendBoxComponent onAddMessage={onAddMessage} sender='user'/>
+                <ChatSendBoxComponent onAddMessage={onAddMessage} sender='user' />
             </div>
         </div>
     )

@@ -1,3 +1,15 @@
 .chat-header-component {
-    color: green;
+    .user-image {
+        background-size: cover;
+        border-radius: 50%;
+        background-repeat: no-repeat;
+        width: 35px;
+        height: 35px;
+        background-image: url(./../../../../images/no_profile.png);
+    }
+
+    nav {
+        background: rgba(246, 250, 253, 0.95);
+        box-shadow: 0px 3px 10px -7px rgba(0, 0, 0, 30%);
+    }
 }

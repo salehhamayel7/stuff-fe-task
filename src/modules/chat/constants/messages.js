@@ -1,22 +1,22 @@
 export const initialMessages = [
     {
         sender: 'user',
-        content: '1'
+        content: 'Schedule an appointment'
     },
     {
         sender: 'agent',
-        content: '2'
+        content: 'Scheduled the appointment for next week'
     },
     {
         sender: 'user',
-        content: '3'
+        content: 'This was really helpfull!'
     },
     {
         sender: 'user',
-        content: '4'
+        content: 'Great service'
     },
     {
         sender: 'agent',
-        content: '5'
+        content: 'Thanks :)'
     }
 ];

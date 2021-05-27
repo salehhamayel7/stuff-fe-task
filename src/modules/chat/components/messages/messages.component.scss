@@ -5,5 +5,10 @@
     .message {
         border: 1px solid #ccc;
         border-radius: 6px;
+
+        &.user {
+            background: #1c6ec3;
+            color: white;
+        }
     }
 }
